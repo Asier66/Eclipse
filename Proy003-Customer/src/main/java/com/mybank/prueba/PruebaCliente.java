@@ -10,19 +10,19 @@ public class PruebaCliente {
         Cliente cliente = new Cliente("Asier","Campos"); 
         System.out.println("Datos de Cliente");
         System.out.println("Nombre: " + cliente.getFirstName() + " " + cliente.getLastName());
-        System.out.println("Saldo Actual: " + cliente.getCuenta().getBalance());
+        System.out.println("Saldo Actual: " + cliente.getCuenta(1).getBalance());
         
         System.out.println("Ingreso 200");
-        cliente.getCuenta().deposit(200);
-        System.out.println("Saldo Actual: " + cliente.getCuenta().getBalance());
+        cliente.getCuenta(1).deposit(200);
+        System.out.println("Saldo Actual: " + cliente.getCuenta(1).getBalance());
 
         System.out.println("Retiro 150");
-        cliente.getCuenta().withdraw(150);
+        cliente.getCuenta(1).withdraw(150);
 
-        System.out.println("Saldo Actual: " + cliente.getCuenta().getBalance());
+        System.out.println("Saldo Actual: " + cliente.getCuenta(1).getBalance());
 
         Cuenta nueva = new Cuenta(2000);
-        cliente.setCuenta(nueva);
+        //cliente.setCuenta(nueva);
         
         
     }

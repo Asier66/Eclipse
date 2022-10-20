@@ -23,5 +23,8 @@ public class EjemploArrayMultidimensional {
 		notas[1][2] = 7;
 		notas[2][1] = 44;
 
+		int [][][] grande= new int [3][][];
+		
+		
 	}
 }

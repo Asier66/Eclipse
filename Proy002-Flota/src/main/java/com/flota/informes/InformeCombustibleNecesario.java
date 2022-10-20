@@ -1,0 +1,24 @@
+package com.flota.informes;
+
+import java.io.PrintStream;
+
+import com.flota.dominio.Vehiculo;
+
+public class InformeCombustibleNecesario {
+	
+	private Vehiculo[] flota;
+	
+	public InformeCombustibleNecesario(Vehiculo[] flota) {
+		super();
+		this.flota = flota;
+	}
+
+	
+	public void generateText(PrintStream out) {
+		out.println("Informer Combustible");
+		
+		for(Vehiculo v: flota) {
+			out.printf("el vehiculo con matricula %s consume %5.2f %n", v.getMatricula(), v.consumoFuel());
+		}
+	}
+}

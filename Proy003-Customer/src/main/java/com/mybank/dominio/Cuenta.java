@@ -2,7 +2,7 @@ package com.mybank.dominio;
 
 public class Cuenta {
 
-    private double balance;
+    protected double balance;
     
     public Cuenta(double initBalance){
         if(initBalance > 0){
@@ -14,19 +14,22 @@ public class Cuenta {
         return balance;
     }
 
-    public void deposit(double amt){
+    public boolean deposit(double amt){
         if(amt > 0 ){
             this.balance = this.balance + amt;
         } else {
             System.out.println("No has ingresado " + "o Importe negativo");
         }
         informa("Depositado Exitosamente");
+        return true;
     }
     
-    public void withdraw(double amt){        
-         if(amt <= 0 ){
+    public boolean withdraw(double amt){ 
+    	boolean result = false;
+         if(amt <= balance ){
+        	 balance = balance - amt;
              System.out.println("Tiene que ser mayor que 0");
-             return;
+             result = true;
          }
    
          if( balance >= amt ){
@@ -35,6 +38,7 @@ public class Cuenta {
               System.out.println("No puede sacar porque es mayor");  
          }
          informa("Retirado Exitosamente");
+         return result;
     }
     
     @Override

@@ -2,7 +2,7 @@ package com.mybank.prueba;
 
 import com.mybank.dominio.Cuenta;
 
-public class PurebaCuenta {
+public class PruebaCuenta {
     
     public static void main(String[] args) {
         

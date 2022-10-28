@@ -14,7 +14,7 @@ public class ProductoJPADAO implements GenericDAO<Producto>{
 	public static void main(String[] args) {
 		
 
-	//1. Crear una Factoria de Entiny Manager
+			//1. Crear una Factoria de Entiny Manager
 			EntityManagerFactory factory;
 			
 			{
@@ -22,7 +22,7 @@ public class ProductoJPADAO implements GenericDAO<Producto>{
 			}
 				
 				
-	//2. Obtenemos un Entity Manager  
+			//2. Obtenemos un Entity Manager  
 			EntityManager em = factory.createEntityManager();
 			
 
@@ -30,7 +30,8 @@ public class ProductoJPADAO implements GenericDAO<Producto>{
 			Query consulta = em.createNativeQuery(
 					"SELECT * FROM PRODUCTOS",
 					Producto.class);
-			//Mostrar todos los productos
+			
+			//MOSTRAR TODOS LOS PRODUCTOS
 			List<Producto> lista = consulta.getResultList();
 	
 			System.out.println("Lista de todos los objetos");
@@ -38,12 +39,28 @@ public class ProductoJPADAO implements GenericDAO<Producto>{
 				System.out.println(p);
 			}
 			
-			//Buscar un producto
+			//BUSCAR UN PRODUCTO
 			Producto p1 = em.find(Producto.class, 2);
 			System.out.println("El producto es " + p1);
-	
+			
+			//CREAR UN PRODUCTO
+			em.getTransaction().begin();
+			try {
+				Producto pNuevo = new Producto();
+				pNuevo.setDescripcion("Cama");
+				pNuevo.setPrecio(24.3);
+				pNuevo.setStock(10);
+				em.persist(pNuevo);
+				
+				System.out.println("Creo el producto " + pNuevo.getIdProducto());
+				
+				em.getTransaction().commit();
+			}catch(Exception e) {
+				em.getTransaction().rollback();
+			}
+			
 	}
-
+	
 	@Override
 	public void add(Producto entidad) {
 		// TODO Auto-generated method stub

@@ -1,0 +1,15 @@
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\mercado\entidades\Usuario.java
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\mercado\persistencia\ProductoDataBaseDAO.java
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\mercado\persistencia\ProductoJPADAO.java
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\mercado\servicios\ProductosService.java
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\mercado\web\LoginServlet.java
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\mercado\persistencia\ProductoInMemoryDAO.java
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\db\BaseDatosMercado.java
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\mercado\web\ListaProductosServlet.java
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\mercado\persistencia\GenericDAO.java
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\mercado\servicios\VentasService.java
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\db\PoolConexiones.java
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\mercado\web\AltaProductoServlet.java
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\mercado\entidades\Producto.java
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\mercado\web\VentasServlet.java
+C:\Users\alumno\git\TWGRUPO5\TiendaOnline\src\main\java\com\curso\mercado\servicios\excepciones\VentasException.java

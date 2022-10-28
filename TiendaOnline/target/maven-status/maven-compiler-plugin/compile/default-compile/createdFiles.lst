@@ -1,0 +1,15 @@
+com\curso\mercado\entidades\Producto.class
+com\curso\mercado\persistencia\ProductoDataBaseDAO.class
+com\curso\mercado\persistencia\ProductoInMemoryDAO.class
+com\curso\mercado\web\LoginServlet.class
+com\curso\db\BaseDatosMercado.class
+com\curso\mercado\web\ListaProductosServlet.class
+com\curso\mercado\web\AltaProductoServlet.class
+com\curso\mercado\persistencia\ProductoJPADAO.class
+com\curso\mercado\entidades\Usuario.class
+com\curso\mercado\web\VentasServlet.class
+com\curso\mercado\servicios\ProductosService.class
+com\curso\mercado\persistencia\GenericDAO.class
+com\curso\db\PoolConexiones.class
+com\curso\mercado\servicios\VentasService.class
+com\curso\mercado\servicios\excepciones\VentasException.class
